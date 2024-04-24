@@ -69,7 +69,6 @@ div {
 
 .flex-row {
 	width: calc(100% / 4);		/* Number of columns!! */
-text-align: center;
 	padding: 0.5em 0.5em;
 	border-right: solid 1px var(--table-border);
 	border-bottom: solid 1px var(--table-border);
@@ -103,19 +102,20 @@ text-align: center;
 
 .flex-cell {
 	width: calc(100% / 4);
-text-align: center;
 	padding: 0.5em 0.5em;
 	border-right: solid 1px var(--table-border);
+//flex: 1 1 33.3%;
 	&:last-child {
+	// border-right: 0;
 	}
 }
 
 @media all and (max-width: 767px) {
 	.flex-row {
-		width: calc(100% / 4);
-	&.first {
-		width: 100%;
-	}
+		width: calc(100% / 4); //1px = border right
+		&.first {
+			width: 100%;
+		}
 	}
 	.column {
 		width: 100%;
@@ -131,28 +131,24 @@ text-align: center;
 			border-bottom: solid 1px var(--table-border);
 		}
 	}
-
 	.header {
 		.flex-row {
 			border-bottom: solid 1px;
 		}
 	}
-
 	.flex-row {
-		width: 100%;
-	&.first {
-		width: 100%;
-		border-bottom: solid 1px var(--table-border);
+		width: 100%; //1px = border right
+		&.first {
+			width: 100%;
+			border-bottom: solid 1px var(--table-border);
+		}
 	}
-	}
-
 	.column {
 		width: 100%;
 		.flex-row {
 			border-bottom: solid 1px var(--table-border);
 		}
 	}
-
 	.flex-cell {
 		width: 100%;
 	}
