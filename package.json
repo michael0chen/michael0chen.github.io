@@ -1,0 +1,19 @@
+{
+	"name": "michael0chen.github.io",
+	"version": "1.0.0",
+	"author": "Michael Chen",
+	"description": "Michael Chen's GitHub Pages",
+	"repository": "https://github.com/michael0chen/michael0chen.github.io",
+	"license": "MIT",
+	"main": "index.html",
+	"engines": {
+		"node": ">=16.13.1"
+	},
+	"scripts": {
+		"cwd": "echo $INIT_CWD",
+		"start": "nginx -c $INIT_CWD/nginx/nginx.conf -p $INIT_CWD",
+		"stop": " nginx -s stop",
+
+		"backup": "mkdir -p ./__BACKUP_FILES && zip -r -v9 ./__BACKUP_FILES/`date '+%Y-%m-%d_%H%M%S'`_Code `git status --porcelain | awk -F ' ' '{print $NF}'` -x package-lock.json -x yarn.lock -x \\*DS_Store -x \\*.png && echo '  Zipped on' `date` '\\n'"
+	}
+}
