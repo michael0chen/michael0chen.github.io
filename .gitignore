@@ -1,0 +1,9 @@
+# Local & temp files
+.DS_Store
+__BACKUP_FILES
+*.zip
+
+# Dev
+.vscode
+.idea
+node_modules*
