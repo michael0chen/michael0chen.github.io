@@ -1,3 +1,155 @@
 body {
-	font-family: 'Inter'; font-size: 18px;
+	font-family: 'Inter'; font-size: 16px;
+}
+
+
+
+
+/**** https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075 **/
+
+:root {
+	--table-header: #1976D2;
+	--table-header-border: #1565C0;
+	--table-border: #d9d9d9;
+	--row-bg: #f4f2f1;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.table-container {
+	display: block;
+//	margin: 2em auto;
+	margin: 20px auto;
+	width: 90%;
+	/*max-width: 600px;*/
+}
+
+.flag-icon {
+	margin-right: 0.1em;
+}
+
+.flex-table {
+	display: flex;
+	flex-flow: row wrap;
+	border-left: solid 1px var(--table-border);
+	transition: 0.5s;
+	&:first-of-type {
+		border-top: solid 1px var(--table-header-border);
+		border-left: solid 1px var(--table-header-border);
+	}
+	&:first-of-type .flex-row {
+		background: var(--table-header);
+		color: white;
+		border-color: var(--table-header-border);
+	}
+	&.row:nth-child(odd) .flex-row {
+		background: var(--row-bg);
+	}
+	&:hover {
+		background: #F5F5F5;
+		transition: 500ms;
+	}
+}
+
+.flex-row {
+	width: calc(100% / 4);		// number of columns!!
+	text-align: center;
+	padding: 0.5em 0.5em;
+	border-right: solid 1px var(--table-border);
+	border-bottom: solid 1px var(--table-border);
+}
+
+/*.flex-row3 {*/
+/*	width: calc(100% / 3);		// number of rows!!*/
+/*	text-align: center;*/
+/*	padding: 0.5em 0.5em;*/
+/*	border-right: solid 1px var(--table-border);*/
+/*	border-bottom: solid 1px var(--table-border);*/
+/*}*/
+
+.rowspan {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.column {
+	display: flex;
+	flex-flow: column wrap;
+	width: 75%;
+	padding: 0;
+	.flex-row {
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		padding: 0;
+		border: 0;
+		border-bottom: solid 1px var(--table-border);
+		&:hover {
+			background: #F5F5F5;
+			transition: 500ms;
+		}
+	}
+}
+
+.flex-cell {
+	width: calc(100% / 4); //1px = border right
+text-align: center;
+	padding: 0.5em 0.5em;
+	border-right: solid 1px var(--table-border);
+//flex: 1 1 33.3%;
+	&:last-child {
+	// border-right: 0;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.flex-row {
+		width: calc(100% / 4); //1px = border right
+		&.first {
+			width: 100%;
+		}
+	}
+	.column {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 430px) {
+	.flex-table {
+		.flex-row {
+			border-bottom: 0;
+		}
+		.flex-row:last-of-type {
+			border-bottom: solid 1px var(--table-border);
+		}
+	}
+
+	.header {
+		.flex-row {
+			border-bottom: solid 1px;
+		}
+	}
+
+	.flex-row {
+		width: 100%; //1px = border right
+		&.first {
+			width: 100%;
+			border-bottom: solid 1px var(--table-border);
+		}
+	}
+
+	.column {
+		width: 100%;
+		.flex-row {
+			border-bottom: solid 1px var(--table-border);
+		}
+	}
+
+	.flex-cell {
+		width: 100%; //1px = border right
+	}
 }
