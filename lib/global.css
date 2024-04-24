@@ -9,7 +9,8 @@ body {
 	.cc-licence {
 		font-size: 10px;
 		& span {
-			display: inline-block;	/* Disable underlining */
+			display: inline-block;	/* Disable underlining, i.e. parent <a>'s text-decoration */
+			/* https://stackoverflow.com/questions/31296452/remove-underline-from-part-of-a-link */
 		}
 	}
 }
