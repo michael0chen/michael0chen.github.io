@@ -6,9 +6,9 @@ Go: https://michael0chen.github.io/
 
 ### To develop locally
 - Install nginx if necessary - [Mac](https://formulae.brew.sh/formula/nginx).
-- `npm run start` to start local nginx server. See `nginx.conf`.
+- `npm run start` to start local nginx server. See `nginx.conf` for details.
 - Go http://localhost:9999/.
-- Code as static pages. No build processing. Current edits are served immediately regardless to branches.
+- Create/edit code as static pages. There is no build processing. Current edits are served immediately regardless of branches.
 - Refresh page - hard reload if necessary.
 
 * `npm run stop` to stop nginx.
@@ -16,7 +16,7 @@ Go: https://michael0chen.github.io/
 * `nginx/nginx_log_access.log` & `nginx/nginx_log_error.log` are created.
 
 
-### Publish to GitHub pages
+### Publish to GitHub Pages
 - Commit to main branch.
 - Push to GitHub.
 - Wait a minute or two.
