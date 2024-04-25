@@ -1,10 +1,10 @@
 # Dev
 .vscode
 .idea
-node_modules*
+node_modules
 
 # Local & temp files
 .DS_Store
-__BACKUP_FILES
 *.zip
-nginx/nginx_log*
+__BACKUP_FILES
+_nginx/nginx_log*
