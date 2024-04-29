@@ -15,6 +15,10 @@ body {
 	}
 }
 
+.smallerFont {
+	font-size: 85%;
+}
+
 
 /**** Flex box table - Based on https://medium.com/@snowleo208/how-to-create-responsive-table-d1662cb62075 **/
 
