@@ -2,6 +2,14 @@ body {
 	font-family: 'Inter'; font-size: 14px;
 }
 
+.navbar {
+	display: flex;
+	align-items: baseline;
+	& span {
+		margin-left: 20px;
+	}
+}
+
 .footer {
 	font-size: 10px;
 	& hr {
@@ -13,6 +21,10 @@ body {
 			/* https://stackoverflow.com/questions/31296452/remove-underline-from-part-of-a-link */
 		}
 	}
+}
+
+.biggerFont {
+	font-size: 130%;
 }
 
 .smallerFont {
@@ -70,13 +82,17 @@ div {
 	/*	background: #F5F5F5;*/
 	/*	transition: 500ms;*/
 	/*}*/
-}
 
-.flex-row {
-	width: calc(100% / 4);		/* Number of columns!! */
-	padding: 0.5em 0.5em;
-	border-right: solid 1px var(--table-border);
-	border-bottom: solid 1px var(--table-border);
+	.three-columns {
+		width: calc(100% / 3) !important;	/* Number of columns!! */
+	}
+
+	.flex-row {
+		width: calc(100% / 4);		/* Number of columns!! */
+		padding: 0.5em 0.5em;
+		border-right: solid 1px var(--table-border);
+		border-bottom: solid 1px var(--table-border);
+	}
 }
 
 .rowspan {

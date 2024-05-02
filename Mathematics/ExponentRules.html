@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<head>
+	<meta charset="UTF-8">
+	<title>Michael Chen</title>
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia">
+	<link rel="stylesheet" href="/lib/jqmath/LatinModern/mathfonts.css">
+	<link rel="stylesheet" href="/lib/jqmath/STIX/mathfonts.css">
+	<link rel="stylesheet" href="/lib/jqmath/jqmath-0.4.3.css">
+
+	<link href="/lib/global.css" rel="stylesheet">
+	<script src="/lib/jqmath/jquery-1.4.3.min.js"></script>
+	<script src="/lib/jqmath/jqmath-etc-0.4.6.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="navbar">
+	<h1>Exponent Rules</h1>
+	<span>
+		<a href="/">Home</a>
+		&gt;
+		<a href="/Mathematics/">Mathematics</a>
+	</span>
+</div>
+
+<div class="table-container" role="table" aria-label="Destinations">
+	<div class="flex-table header" role="rowgroup">
+		<div class="flex-row three-columns first" role="columnheader">Exponent Rule</div>
+		<div class="flex-row three-columns first" role="columnheader">General Rule</div>
+		<div class="flex-row three-columns first" role="columnheader">Examples</div>
+	</div>
+
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Zero Law</div>
+		<div class="flex-row three-columns" role="cell">
+			$(a)^0 = 1$
+		</div>
+		<div class="flex-row three-columns" role="columnheader">$2^0 = 1$,$(-5)^0=1$</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Product</div>
+		<div class="flex-row three-columns" role="cell">
+			$a^m × a^n = a ^{m+n}$
+		</div>
+		<div class="flex-row three-columns" role="columnheader">
+			$4^5 + 4^3 = 4^{5+3} = 4^8$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Quotient</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			${a^m} / {a^n} = a ^{m-n}$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="columnheader">
+			$4^5 / 4^3 = 4^{5-3} = 4^2$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Power of a power</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$(a^m)^n = a^{mn}$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="columnheader">
+			$(2^5)^3 = a^{5×3} = a^{15}$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Power of a product</div>
+		<div class="flex-row three-columns" role="cell">
+			$(ab)^n = a^n b^n$
+		</div>
+		<div class="flex-row three-columns" role="cell">
+			$(2×3)^5 = 2^5 × 3^5$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Power of a quotient</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$(a / b)^n = a^n / b^n$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$(2 / 3)^5 = 2^5 / 3^5$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Negative Exponent</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$a^{-n} = 1 / a^n$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$2^{-5} = 1 / 2^5$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Negative Exponent (fraction)</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$(a / b)^{-n} = (b / a)^{n} = b^n / a^n$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$(2 / 3)^{-5} = (3 / 2)^{5} = 3^5 / 2^5$
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Fractional / Rational Exponent $m/n$</div>
+		<div class="flex-row three-columns" role="cell">
+			<span class="biggerFont">$a^{m/n} = √^na^m $</span>
+			or
+			<span class="biggerFont">$(√^na)^m$</span>
+		</div>
+		<div class="flex-row three-columns" role="cell">
+			<span class="biggerFont">$8^{5/3} = √^3 8 ^5 $</span>
+			or
+			<span class="biggerFont">$(√^3 8)^5$</span>
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Fractional / Rational Exponent $1/2$</div>
+		<div class="flex-row three-columns" role="cell">
+			<span class="biggerFont">$a^{1/2} = √^2 a$</span>
+			or just
+			<span class="biggerFont">$√a$</span>
+		</div>
+		<div class="flex-row three-columns" role="cell">
+			<span class="biggerFont">$4^{1/2} = √^2 4$</span>
+			or just
+			<span class="biggerFont">$√4$</span>
+		</div>
+	</div>
+	<div class="flex-table row" role="rowgroup">
+		<div class="flex-row three-columns" role="cell">Fractional / Rational Exponent $1/3$</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$a^{1/3} = √^3 a$
+		</div>
+		<div class="flex-row three-columns biggerFont" role="cell">
+			$8^{1/3} = √^3 8$
+		</div>
+	</div>
+
+</div>
+
+
+
+
+<h2>References</h2>
+<ul>
+	<li><a href="https://www.cuemath.com/algebra/exponent-rules/">CueMath</a></li>
+	<li><a href="https://sciencenotes.org/exponent-rules-and-examples/">Science Notes</a></li>
+	<li><a href="https://www.pinterest.com/pin/753156737695879682/">Pinterest</a></li>
+</ul>
+
+
+<div class="footer">
+	<hr>
+	<p class="cc-licence" xmlns:cc="http://creativecommons.org/ns#">
+		<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+			<img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:15px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""><span>
+			&nbsp;This work is licensed under&nbsp;</span>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+		</a>.
+	</p>
+	<p>
+		Uses <a href="https://mathscribe.com/author/jqmath.html" target="_blank">jqMath</a> for easy equation creation (MIT license).
+	</p>
+</div>
+</body>
+</html>
