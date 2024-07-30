@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Site font & css-->
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+	<link href="/lib/global.css" rel="stylesheet">
+
+	<!-- ####### Vega-related ##########-->
+	<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0/build/vega.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.0/build/vega-lite.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0/build/vega-embed.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+	<h1>A simple bar charting using Vega</h1>
+	<span>
+		<a href="/">Home</a>
+		&gt;
+		<a href="/Visualization/">Visualization</a>
+	</span>
+</div>
+
+
+<div id="vis"></div>
+<script type="text/javascript">
+	var spec = "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json";
+	vegaEmbed('#vis', spec).then(function(result) {
+		// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+	}).catch(console.error);
+</script>
+
+
+<h2>References</h2>
+<ul>
+	<li>Based on <a href="https://github.com/vega/vega-embed">this Vega-Embed example</a>.</li>
+	<li>Using <a href="https://vega.github.io/editor/#/examples/vega/bar-chart">this json data & Vega Editor</a></li>
+</ul>
+
+</body>
+</html>
