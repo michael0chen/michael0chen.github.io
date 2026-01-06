@@ -16,6 +16,12 @@ ul {
 	}
 }
 
+li {
+	&:first-of-type {
+		margin-top: 0.4em;
+	}
+}
+
 .navbar {
 	display: flex;
 	align-items: baseline;
